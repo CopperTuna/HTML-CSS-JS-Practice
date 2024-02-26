@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main id="main">
+      <header id="header">Froilan's Phone</header>
+      <div class="guess-container">
+        <h1 class="guess title">Guess the number</h1>
+        <p class="guess comment"></p>
+        <input id="input" class="guess input-here" placeholder="0" />
+        <button class="guess buttons" onclick="appendToInput('1')">1</button>
+        <button class="guess buttons" onclick="appendToInput('2')">2</button>
+        <button class="guess buttons" onclick="appendToInput('3')">3</button>
+        <button class="guess buttons" onclick="appendToInput('4')">4</button>
+        <button class="guess buttons" onclick="appendToInput('5')">5</button>
+        <button class="guess buttons" onclick="appendToInput('6')">6</button>
+        <button class="guess buttons" onclick="appendToInput('7')">7</button>
+        <button class="guess buttons" onclick="appendToInput('8')">8</button>
+        <button class="guess buttons" onclick="appendToInput('9')">9</button>
+        <button class="guess buttons" onclick="appendToInput('0')">0</button>
+        <button class="guess buttons" onclick="enterNumber()">Enter</button>
+        <button class="guess buttons" onclick="clearInput()">Clear</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

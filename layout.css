@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: silver;
+    margin: 0;
+    font-size: 110%;
+}
+
+#main-area {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    background-color: violet;
+    border: 2px solid;
+    text-align: center;
+}
+
+#navbar {
+    background-color: pink;
+    border: 2px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+#navbar a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    background-color: gold;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.sidebar {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: lightblue;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: minmax(3, auto) ;
+    grid-template-rows: minmax(30px, auto);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.product-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.input {
+    grid-column: span 3;
+}
+
+.button-1 {
+    grid-column: span 3;
+}

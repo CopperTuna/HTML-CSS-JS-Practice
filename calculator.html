@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main id="main">
+      <header id="header">Froilan's Phone</header>
+      <div class="calculator-container">
+        <input readonly class="item-1" placeholder="0" id="display" />
+        <button class="item operator" onclick="clearDisplay()">C</button>
+        <button class="item operator" onclick="appendToDisplay('/')">/</button>
+        <button class="item operator" onclick="appendToDisplay('*')">*</button>
+        <button class="item operator" onclick="appendToDisplay('-')">-</button>
+        <button class="item item-6" onclick="appendToDisplay('7')">7</button>
+        <button class="item item-7" onclick="appendToDisplay('8')">8</button>
+        <button class="item item-8" onclick="appendToDisplay('9')">9</button>
+        <button class="item operator" onclick="appendToDisplay('+')">+</button>
+        <button class="item item-10" onclick="appendToDisplay('4')">4</button>
+        <button class="item item-11" onclick="appendToDisplay('5')">5</button>
+        <button class="item item-12" onclick="appendToDisplay('6')">6</button>
+        <button class="item item-13" onclick="appendToDisplay('.')">.</button>
+        <button class="item item-14" onclick="appendToDisplay('1')">1</button>
+        <button class="item item-15" onclick="appendToDisplay('2')">2</button>
+        <button class="item item-16" onclick="appendToDisplay('3')">3</button>
+        <button class="item item-17" onclick="appendToDisplay('0')">0</button>
+        <button class="item item-18" onclick="calculate()">=</button>
+        <div></div>
+      </div>
+      <footer></footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
