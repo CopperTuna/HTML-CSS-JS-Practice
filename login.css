@@ -1,0 +1,77 @@
+body, html {
+    margin: 0px;
+    background-color: silver;
+    font-size: 110%;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    background-color: violet;
+    border: 1px solid;
+    text-align: center;
+}
+
+#navbar {
+    background-color: pink;
+    border: 1px solid;
+    text-align: center;
+    padding: 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+}
+
+#navbar a:hover {
+    background-color: gold;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    border: 1px solid;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 30px;
+    background-color: hsl(195, 53%, 80%);
+}
+
+.container img {
+    height: 100px;
+    width: 100px;
+    margin: 0px 0px 50px 0px;
+    border-radius: 50px;
+}
+
+.container input {
+    width: 75%;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container input:focus {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.container p {
+    margin: 5px;
+}
