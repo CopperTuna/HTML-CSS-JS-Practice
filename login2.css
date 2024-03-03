@@ -1,0 +1,177 @@
+body, html {
+    background-color: silver;
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+}
+
+.container {
+    padding: 1rem 0;
+}
+
+.container h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.container a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1000ms;
+}
+
+.container a:hover {
+    background-color: gold;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    width: 22rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: 1.5rem 1.5rem 2rem;
+}
+
+.container1 img {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    bottom: 18rem;
+    border-radius: 50%;
+}
+
+.container1 input {
+    width: 75%;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 1000ms;
+}
+
+.container1 input:focus {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.container1 button {
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 1000ms;
+}
+
+.container1 button:hover {
+    background-color: gold;
+}
+
+.container1 a {
+    color: black;
+}
+
+@media (max-width: 600px) {
+    body, html {
+        font-size: 100%;
+    }
+
+    #header .container h1 {
+        font-size: 1rem;
+    }
+
+    #header .container a {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #main .container1 {
+        width: 20rem;
+        height: 23rem;
+    }
+
+    #main .container1 img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #main .container1 input {
+        height: 1.9rem;
+    }
+}
+
+@media (max-width: 434px) {
+    #header .container h1 {
+        font-size: 0.9rem;
+    }
+
+    #header .container a {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    #main .container1 {
+        width: 19rem;
+        height: 21rem;
+    }
+
+    #main .container1 label {
+        font-size: 0.8rem;
+    }
+
+    #main .container1 input {
+        height: 1.7rem;
+        font-size: 0.8rem;
+    }
+
+    #main .container button {
+        width: 6rem;
+        height: 1.8rem;
+    }
+
+    #main .container a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 364px) {
+    #header .container h1 {
+        font-size: 0.8rem;
+    }
+
+    #header .container a {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    #main .container1 {
+        width: 16rem;
+        height: 20rem;
+    }
+}
