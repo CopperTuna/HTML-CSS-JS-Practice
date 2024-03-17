@@ -1,0 +1,90 @@
+html {
+    font-size: 20px;
+    height: 100%;
+}
+body {
+    font-size: 1rem;
+    height: inherit;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: silver;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.5rem;
+    box-shadow: 0.75rem 0.75rem 1.5rem;
+    width: 25rem;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+#Display {
+    grid-column: span 4;
+    font-size: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: right;
+    padding: 0.5rem;
+    background-color: hsl(0, 0%, 30%);
+    box-sizing: border-box;
+}
+button {
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: gray;
+    transition: background-color 100ms;
+    box-sizing: border-box;
+}
+button:hover {
+    background-color: gold;
+    animation: jump 100ms linear alternate;
+}
+button:active {
+    animation: jump-active 100ms linear alternate;
+}
+@keyframes jump {
+    to {
+        transform: translateY(-0.5rem);
+        box-shadow: 0.75rem 0.75rem 1.5rem;
+    }
+}
+@keyframes jump-active {
+    to {
+        transform: translateY(-0.5rem);
+        box-shadow: 0.75rem 0.75rem 1.5rem;
+    }
+}
+#button1,
+#button2,
+#button3,
+#button4,
+#button8 {
+    background-color: hsl(51, 70%, 50%);
+}
+#button8 {
+    grid-row: span 2;
+    border-radius: 0.5rem;
+    height: 8rem;
+}
+#button15 {
+    grid-row: span 2;
+    border-radius: 0.5rem;
+    height: 8rem;
+}
+#button16 {
+    grid-column: span 2;
+    border-radius: 0.5rem;
+    width: 10.5rem;
+}

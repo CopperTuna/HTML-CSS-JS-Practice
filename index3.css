@@ -1,0 +1,64 @@
+:root {
+    --background-color: silver;
+    --font-size: 20px;
+    --margin: 0;
+    --font-family: "Helvetica", "Arial", "sans-serif";
+    --height: 100%;
+    --button-backgroundcolor: gold;
+}
+html {
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    height: var(--height);
+}
+body {
+    font-size: 1rem;
+    background-color: var(--background-color);
+    margin: var(--margin);
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--height);
+}
+.image-container {
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+img {
+    width: 10rem;
+    height: 10rem;
+    border: 0.1rem solid;
+    padding: 2rem;
+    object-fit: cover;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+button {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 100ms;
+}
+button:hover {
+    background-color: var(--button-backgroundcolor);
+    animation: jump 100ms linear alternate;
+}
+@keyframes jump {
+    to {
+        transform: translateY(-0.5rem);
+        box-shadow: 0.75rem 0.75rem 1.5rem;
+    }
+}
